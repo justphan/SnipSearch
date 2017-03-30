@@ -1,0 +1,23 @@
+{	
+	"manifest_version": 2,
+	
+	"name": "SnipSearch",
+	"description": "This extension allows you to highlight a rectangular section of the webpage to save and/or Google image search.",
+	"version": "1.0",
+	
+	"browser_action": {
+		"default_icon": "icons/icon19.png",
+		//"default_popup": "popup.html",
+		"default_title": "SnipSearch"
+	},
+	
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+	
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/"
+	]
+}
